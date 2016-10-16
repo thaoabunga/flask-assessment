@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="/static/styles.css"> <!-- Unable to connect CSS file to form and base html, attempted to use <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}"> as well. -->
+</head>
+<body>
+
+<!-- This page needs a form that can capture data about the user's
+first name, last name, job title, and salary requirements. -->
+<h1>Ursula's Underwater Tea Party</h1>
+<h3>Employment Application</h3>
+<img src="https://s-media-cache-ak0.pinimg.com/originals/1f/5b/25/1f5b2549e51a0196dd3902c66c5d2431.jpg">
+
+<p><br>Thank you for your interest in joining Ursula's software engineering team. 
+We pride ourselves in efficient processes, a collaborative work environment, and a rich culture of diversity and inclusiveness. We look forward to learning more about you! Please fill out the following application below. All fields are required.<br></p>
+
+
+
+<div class="form" id="applicantform">
+	<form action="/application" methods= "POST">
+		<label for="firstname">First Name:</label>
+		<input id="firstname" type="text" name="textfield"><br>
+		<label for="lastname"><strong>Last Name:</strong></label>
+		<input id="lastname" type="text" name="textfield"><br>
+	<label for="position">Select Your Position:</label>
+    <select id="position" name="select">
+        <option value="1">Software Engineer</option>
+        <option value="2">QA Engineer</option>
+        <option value="3">Product Manager</option>
+    </select>
+    <br>
+		Salary Requirements:
+		<input type="text" name="amount"><br>
+		Thank you for applying!<br>
+		<input type="submit" name="submit" value="Submit">
+</div>
+
+</body>
+</html>
+

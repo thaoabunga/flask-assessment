@@ -1,0 +1,32 @@
+/* Your CSS goes here */
+body{ 
+	font-family:"Gill Sans", "Gill Sans MT", sans-serif
+}
+
+input[type="text"], textarea {
+
+  background-color : #ffff99; 
+
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 20%;
+}
+
+
+p {
+    border: 2px solid purple;
+    border-radius: 5px;
+}
+h1{
+	display: block;
+	text-align: center;
+	font-family: copperplate 
+
+}
+h3{
+	display: block;
+	text-align: center;
+	font-family: copperplate/* Your styles can go here. */
