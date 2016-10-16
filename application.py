@@ -1,12 +1,18 @@
 from flask import Flask, render_template
 from flask_debugtoolbar import DebugToolbarExtension
 
+import jinja2
+import application
+
 
 app = Flask(__name__)
 
 
 # Required to use Flask sessions and the debug toolbar
 app.secret_key = "ABC"
+
+app.jinja_env.undefined = jinja2.StrictUndefined
+
 
 @app.route("/")
 def index_page():
